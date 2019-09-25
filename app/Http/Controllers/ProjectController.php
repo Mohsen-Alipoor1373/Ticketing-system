@@ -116,4 +116,5 @@ class ProjectController extends Controller
         return view('/Frontend.Project.show', compact('projects', 'permisions'));
     }
 
+
 }
