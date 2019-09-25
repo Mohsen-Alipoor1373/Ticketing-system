@@ -14,7 +14,7 @@ class ApiTerlloController extends Controller
      */
     public function index()
     {
-        $tasks = Task::pluck('title');
+        $tasks = Task::get();
         return response()->json($tasks);
     }
 
