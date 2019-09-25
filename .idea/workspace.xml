@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73b3dc37-d736-404a-a8c6-c5320701991b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiTerlloController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiTerlloController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Web/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Web/ProjectController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,10 +113,12 @@
   <component name="ProjectId" id="1RJkSw9kP5GtaJ7QVjgTyKaaGE6" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\app\Http\Controllers\Web" />
       <recent name="C:\xampp\htdocs\mohsenalipoor\blog\app\Http\Controllers\Api" />
     </key>
   </component>
@@ -148,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569392589975</updated>
-      <workItem from="1569392594207" duration="3859000" />
+      <workItem from="1569392594207" duration="4546000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1569396495279</created>
@@ -171,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569396952414</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="namespace">
+      <created>1569397249633</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569397249633</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +199,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="api" />
-    <option name="LAST_COMMIT_MESSAGE" value="api" />
+    <MESSAGE value="namespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="namespace" />
   </component>
 </project>

@@ -40,25 +40,17 @@ class ProjectController extends Controller
     public function store(ProjectRequest $request)
     {
         $project = Project::create([
-
             'title' => $request['Title'],
             'description' => $request['Description'],
             'LanDev' => $request['LanDev'],
             'user_id' => $request['user_id'],
-
         ]);
         $permisions = $request['permision'];
         foreach ($permisions as $permision) {
-
             ProPermision::create([
-
                 'project_id' => $project->id,
                 'permision_id' => $permision,
-
-
             ]);
-
-
         }
         session()->flash('success', 'Project Add Success');
         return redirect()->back();
