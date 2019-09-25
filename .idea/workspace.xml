@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="883f6800-3884-4e53-9d5b-7b371bc76f68" name="Default Changelist" comment="" />
+    <list default="true" id="883f6800-3884-4e53-9d5b-7b371bc76f68" name="Default Changelist" comment="gf">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +17,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -102,7 +109,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1RGwjVwLxKZJGI9jo6xdi6yNIax" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/icon" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -144,11 +153,26 @@
       <updated>1569306876009</updated>
       <workItem from="1569306877249" duration="114000" />
       <workItem from="1569307177594" duration="12666000" />
-      <workItem from="1569377684831" duration="9370000" />
+      <workItem from="1569377684831" duration="10592000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gf" />
+    <option name="LAST_COMMIT_MESSAGE" value="gf" />
   </component>
 </project>
