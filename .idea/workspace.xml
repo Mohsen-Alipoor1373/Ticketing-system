@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="883f6800-3884-4e53-9d5b-7b371bc76f68" name="Default Changelist" comment="gf">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="883f6800-3884-4e53-9d5b-7b371bc76f68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,8 +156,16 @@
       <updated>1569306876009</updated>
       <workItem from="1569306877249" duration="114000" />
       <workItem from="1569307177594" duration="12666000" />
-      <workItem from="1569377684831" duration="10592000" />
+      <workItem from="1569377684831" duration="11883000" />
     </task>
+    <task id="LOCAL-00001" summary="JH">
+      <created>1569388500961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569388500962</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +184,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gf" />
-    <option name="LAST_COMMIT_MESSAGE" value="gf" />
+    <MESSAGE value="JH" />
+    <option name="LAST_COMMIT_MESSAGE" value="JH" />
   </component>
 </project>
