@@ -9,7 +9,7 @@
                     <span class="info-box-icon bg-info elevation-1"><i class="fa fa-gear"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Projects</span>
+                        <span class="info-box-text">پروژه های شما</span>
                         <span class="info-box-number">
 0
                         </span>
@@ -24,7 +24,7 @@
                     <span class="info-box-icon bg-danger elevation-1"><i class=""></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Tasks</span>
+                        <span class="info-box-text">تسک های شما</span>
                         <span class="info-box-number">0</span>
                     </div>
                     <!-- /.info-box-content -->
@@ -42,7 +42,7 @@
                                     class=""></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">EndTasks</span>
+                        <span class="info-box-text">تسکهای پایان یافته</span>
                         <span class="info-box-number">0</span>
                     </div>
                     <!-- /.info-box-content -->
@@ -55,7 +55,7 @@
                     <span class="info-box-icon bg-warning elevation-1"><i class="fa fa-users"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">TeamWork</span>
+                        <span class="info-box-text">کارهای تیمی</span>
                         <span class="info-box-number">0</span>
                     </div>
                     <!-- /.info-box-content -->

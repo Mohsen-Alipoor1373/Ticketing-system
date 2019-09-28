@@ -3,7 +3,7 @@
 @section('content')
     @if(session('success'))
         <div class="alert alert-success">
-            Add Task Success
+            تسک جدید با موفقیت ثبت شد
         </div>
     @endif
 
@@ -18,7 +18,7 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label>Project</label>
+                            <label>پروژه</label>
                             <select class="form-control select2" style="width: 100%;" name="project_id">
                                 @foreach($projects as $project)
                                     <option value="{{$project->id}}">{{$project->title}}</option>
@@ -27,14 +27,14 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">TitleTask</label>
-                            <input type="text" class="form-control" id="exampleInputTitle" placeholder="Title"
+                            <label for="exampleInputEmail1">عنوان تسک</label>
+                            <input type="text" class="form-control" id="exampleInputTitle" placeholder="عنوان"
                                    name="title">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">DescriptionProject</label>
+                            <label for="exampleInputEmail1">توضیحات تسک</label>
                             <input type="text" class="form-control" id="exampleInputTitle"
-                                   placeholder="Description"
+                                   placeholder="توضیحات"
                                    name="description">
                         </div>
 
@@ -42,7 +42,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
                     </div>
                 </form>
             </div>

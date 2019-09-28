@@ -12,7 +12,7 @@
     @endif
     @if(session('success'))
         <div class="alert alert-success">
-            Add User Success
+           کاربر جدید با موفقیت ثبت شد
         </div>
     @endif
 
@@ -29,7 +29,7 @@
                         <div class="input-group mb-3">
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror"
                                    name="name" value="{{ old('name') }}" required autocomplete="name"
-                                   placeholder="UserName" autofocus>
+                                   placeholder="نام کاربری" autofocus>
                             <div class="input-group-append">
                                 <span class="fa fa-user input-group-text"></span>
                             </div>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                                   name="email" value="{{ old('email') }}" placeholder="Email" required
+                                   name="email" value="{{ old('email') }}" placeholder="ایمیل" required
                                    autocomplete="email">
                             <div class="input-group-append">
                                 <span class="fa fa-envelope input-group-text"></span>
@@ -55,7 +55,7 @@
                         <div class="input-group mb-3">
                             <input id="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" name="password"
-                                   placeholder="Password" required autocomplete="new-password">
+                                   placeholder="رمز" required autocomplete="new-password">
                             <div class="input-group-append">
                                 <span class="fa fa-lock input-group-text"></span>
                             </div>
@@ -68,7 +68,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <input id="password-confirm" type="password" class="form-control"
-                                   name="password_confirmation" placeholder="ReturnPassword" required
+                                   name="password_confirmation" placeholder="تکرا رمز" required
                                    autocomplete="new-password">
                             <div class="input-group-append">
                                 <span class="fa fa-lock input-group-text"></span>
@@ -76,9 +76,9 @@
                         </div>
                         <div class="form-group">
                             <select class="form-control select2" style="width: 100%;" name="isadmin">
-                                <option value="">Admin</option>
-                                <option value="1">User</option>
-                                <option value="2">Agent</option>
+                                <option value="">مدیر</option>
+                                <option value="1">نماینده</option>
+                                <option value="2">مشتری</option>
                             </select>
                         </div>
 
@@ -86,7 +86,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
                     </div>
                 </form>
             </div>

@@ -3,7 +3,7 @@
 @section('content')
     @if(session('delete'))
         <div class="alert alert-danger">
-            Delete Task Success
+           تسک مورد نظر با موفقیت حذف شد
         </div>
     @endif
     <div class="row">
@@ -13,9 +13,9 @@
                 <div class="card-body table-responsive p-0">
                     <table class="table table-hover">
                         <tr>
-                            <th>Title</th>
-                            <th>Date</th>
-                            <th>Status</th>
+                            <th>عنوان</th>
+                            <th>زمان</th>
+                            <th>دسترسی ها</th>
                         </tr>
                         @foreach($tasks as $task)
                             @if($task->expectation !=1)

@@ -8,10 +8,10 @@
                 <div class="card-body table-responsive p-0">
                     <table class="table table-hover">
                         <tr>
-                            <th>ViewTask</th>
-                            <th>Title</th>
-                            <th>Date</th>
-                            <th>Status</th>
+                            <th>مشاهده تسک ها</th>
+                            <th>عنوان</th>
+                            <th>تاریخ</th>
+                            <th>دسترسی ها</th>
                         </tr>
                         @foreach($projects as $project)
 

@@ -3,7 +3,7 @@
 @section('content')
     @if(session('success'))
         <div class="alert alert-success">
-            Add Task Success
+            تسک جدید با موفقیت ثبت شد
         </div>
     @endif
 
@@ -19,7 +19,7 @@
                     <div class="card-body">
 
                         <div class="form-group">
-                            <label>Task</label>
+                            <label>تسک</label>
                             <select class="form-control select2" style="width: 100%;" name="task_id">
                                 @foreach($projects as $project)
                                     <option value="{{$project->id}}">{{$project->title}}</option>
@@ -27,7 +27,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Project</label>
+                            <label>پروژه</label>
                             <select class="form-control select2" style="width: 100%;" name="project_id">
                                 @foreach($projects as $project)
                                     <option value="{{$project->id}}">{{$project->title}}</option>
@@ -38,7 +38,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
                     </div>
                 </form>
             </div>

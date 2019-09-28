@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73b3dc37-d736-404a-a8c6-c5320701991b" name="Default Changelist" comment="end">
-      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/RequestDelete/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/view.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/asine.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/view.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Users/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Users/show.blade.php" afterDir="false" />
+    <list default="true" id="73b3dc37-d736-404a-a8c6-c5320701991b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProTask.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_24_071814_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_24_071814_create_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_24_081304_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_24_081304_create_tasks_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Project/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Project/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Project/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Project/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/RequestDelete/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/RequestDelete/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Task/asine.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/asine.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Task/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Task/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Task/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Task/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Users/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +178,8 @@
       <workItem from="1569652407709" duration="9397000" />
       <workItem from="1569662300897" duration="89000" />
       <workItem from="1569662393248" duration="508000" />
-      <workItem from="1569662924558" duration="11744000" />
+      <workItem from="1569662924558" duration="12488000" />
+      <workItem from="1569676127439" duration="2624000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1569396495279</created>
@@ -229,7 +216,13 @@
       <option name="project" value="LOCAL" />
       <updated>1569398202162</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎۰۰۰۰۶" summary="اتمام روز">
+      <created>1569674838364</created>
+      <option name="number" value="LOCAL‎۰۰۰۰۶" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۰۶" />
+      <updated>1569674838364</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +245,7 @@
     <MESSAGE value="api" />
     <MESSAGE value="namespace" />
     <MESSAGE value="end" />
-    <option name="LAST_COMMIT_MESSAGE" value="end" />
+    <MESSAGE value="اتمام روز" />
+    <option name="LAST_COMMIT_MESSAGE" value="اتمام روز" />
   </component>
 </project>

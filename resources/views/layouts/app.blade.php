@@ -50,7 +50,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
                     <i class="fa fa-bell-o"></i>
-                    <span class="badge badge-warning navbar-badge">0}</span>
+                    <span class="badge badge-warning navbar-badge">0</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
                     <span class="dropdown-item dropdown-header">0</span>
@@ -90,7 +90,7 @@
                         <li class="nav-item   menu-open">
                             <a href="{{url('/home')}}" class="nav-link">
                                 <i class="nav-icon fa fa-dashboard"></i>
-                                <p>Dashboard</p>
+                                <p>داشبورد</p>
                             </a>
                         </li>
 
@@ -100,7 +100,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>
-                                        Project
+                                        پروژه
                                         <i class="fa fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -108,7 +108,7 @@
                                     <li class="nav-item">
                                         <a href="{{url('/project')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>AddProject</p>
+                                            <p>پروژه جدید</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -117,7 +117,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>
-                                        Task
+                                        تسک
                                         <i class="fa fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -125,7 +125,7 @@
                                     <li class="nav-item">
                                         <a href="{{url('/asine')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>AsineTask</p>
+                                            <p>تسک ها</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -134,7 +134,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>
-                                        Users
+                                        کاربران
                                         <i class="fa fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -142,7 +142,7 @@
                                     <li class="nav-item">
                                         <a href="{{url('/show')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>AddUser</p>
+                                            <p>کاربران</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -155,7 +155,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>
-                                        RequestDeleteTask
+                                        درخواست های تسک
                                         <i class="fa fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -163,7 +163,7 @@
                                     <li class="nav-item">
                                         <a href="{{url('/requestask')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>DeleteTask</p>
+                                            <p>حذف تسک</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -180,7 +180,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>
-                                        YourProject
+                                        پروژهای شما
                                         <i class="fa fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -188,7 +188,7 @@
                                     <li class="nav-item">
                                         <a href="{{url('/taskshow')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Projects</p>
+                                            <p>پروژه ها</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -199,7 +199,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>
-                                        Tasks
+                                        تسک
                                         <i class="fa fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -207,7 +207,7 @@
                                     <li class="nav-item">
                                         <a href="{{url('/task')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>AddTask</p>
+                                            <p>اضافه کردن تسک</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -215,7 +215,7 @@
                                     <li class="nav-item">
                                         <a href="{{url('/showtask')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>ViewTask</p>
+                                            <p>مشاهده تسک ها</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -225,7 +225,7 @@
                         <li class="nav-item">
                             <a href="{{ route('logout') }}"
                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                Logout
+                                خروج
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

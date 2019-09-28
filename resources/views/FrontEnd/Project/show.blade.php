@@ -8,12 +8,12 @@
                     <table class="table table-hover">
                         <tr>
 
-                            <th>ViewTask</th>
-                            <th>Project</th>
-                            <th>LanDev</th>
-                            <th>Description</th>
-                            <th>Date</th>
-                            <th>Status</th>
+                            <th>مشاهده تسک</th>
+                            <th>پروژه</th>
+                            <th>زبان پروژه</th>
+                            <th>توضیحات</th>
+                            <th>تاریخ</th>
+                            <th>دسترسی</th>
                         </tr>
                         @foreach($projects as $project)
                             @if($project->user_id == auth()->user()->id)

@@ -3,7 +3,7 @@
 @section('content')
     @if(session('success'))
         <div class="alert alert-success">
-            Add Task Success
+            تسک جدید با مئفقیت ثبت شد
         </div>
     @endif
 
@@ -18,7 +18,7 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label>Task</label>
+                            <label>تسک</label>
                             <select class="form-control select2" style="width: 100%;" name="task_id">
                                 @foreach($tasks as $task)
                                     <option value="{{$task->id}}">{{$task->title}}</option>
@@ -27,7 +27,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label>User</label>
+                            <label>کاربران</label>
                             <select class="form-control select2" multiple="multiple"
                                     data-placeholder="Select Permision"
                                     style="width: 100%;text-align: right" name="user_id[]">
@@ -44,7 +44,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
                     </div>
                 </form>
             </div>

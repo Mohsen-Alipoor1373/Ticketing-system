@@ -8,10 +8,10 @@
                     <table class="table table-hover">
                         <tr>
 
-                            <th>Task</th>
-                            <th>User</th>
-                            <th>Date</th>
-                            <th>Status</th>
+                            <th>تسک</th>
+                            <th>کاربر</th>
+                            <th>تاریخ</th>
+                            <th>دسترسی</th>
                         </tr>
                         @foreach($tasks as $task)
 

@@ -47,7 +47,7 @@ class TaskController extends Controller
             'description' => $request['description'],
         ]);
         $name = auth()->user()->name;
-        Mail::to('test@gmail.com')->send(new MailUser($name));
+        Mail::to('mohsenalipoor1373@gmail.com')->send(new MailUser($name));
         session()->flash('success', 'Task Add Success');
         return redirect()->back();
     }

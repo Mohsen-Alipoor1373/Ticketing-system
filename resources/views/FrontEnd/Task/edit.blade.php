@@ -3,7 +3,7 @@
 @section('content')
     @if(session('success'))
         <div class="alert alert-success">
-            Add Task Success
+            تسک جدید با موفقیت ثبت شد
         </div>
     @endif
 
@@ -19,7 +19,7 @@
                     {{method_field('PATCH')}}
                     <div class="card-body">
                         <div class="form-group">
-                            <label>Project</label>
+                            <label>پروژه</label>
                             <select class="form-control select2" style="width: 100%;" name="project_id">
                                 @foreach($projects as $project)
                                     @if($project->id == $task->project_id)
@@ -31,12 +31,12 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">TitleTask</label>
+                            <label for="exampleInputEmail1">عنوان تسک</label>
                             <input type="text" class="form-control" id="exampleInputTitle" value="{{$task->title}}"
                                    name="title">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">DescriptionProject</label>
+                            <label for="exampleInputEmail1">توضیحات پروژه</label>
                             <input type="text" class="form-control" id="exampleInputTitle"
                                    value="{{$task->description}}"
                                    name="description">
@@ -46,7 +46,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
                     </div>
                 </form>
             </div>

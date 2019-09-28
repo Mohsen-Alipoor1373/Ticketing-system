@@ -12,7 +12,7 @@
     @endif
     @if(session('success'))
         <div class="alert alert-success">
-            Add Project Success
+            پروژه جدید با موفقیت ثبت شد
         </div>
     @endif
 
@@ -27,22 +27,22 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">TitleProject</label>
+                            <label for="exampleInputEmail1">عنوان پروژه</label>
                             <input type="text" class="form-control" id="exampleInputTitle" placeholder="Title"
                                    name="Title">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputDescription">DescriptionProject</label>
+                            <label for="exampleInputDescription">توضیحات پروژه</label>
                             <input type="text" class="form-control" id="exampleInputDescription"
                                    placeholder="Description" name="Description">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputLanDev">LanDevProject</label>
+                            <label for="exampleInputLanDev">زبان پروژه</label>
                             <input type="text" class="form-control" id="exampleInputLanDev"
                                    placeholder="LanDev" name="LanDev">
                         </div>
                         <div class="form-group">
-                            <label>Permision</label>
+                            <label>دسترسی</label>
                             <select class="form-control select2" multiple="multiple"
                                     data-placeholder="Select Permision"
                                     style="width: 100%;text-align: right" name="permision[]">
@@ -59,7 +59,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
                     </div>
                 </form>
             </div>
