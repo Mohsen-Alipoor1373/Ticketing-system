@@ -418,8 +418,10 @@ class ComposerStaticInitb1b28826ef2946e4c61e5ea300828500
     );
 
     public static $classMap = array (
+        'App\\AsineTask' => __DIR__ . '/../..' . '/app/AsineTask.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\ApiTerlloController' => __DIR__ . '/../..' . '/app/Http/Controllers/ApiTerlloController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -430,6 +432,7 @@ class ComposerStaticInitb1b28826ef2946e4c61e5ea300828500
         'App\\Http\\Controllers\\ProTask' => __DIR__ . '/../..' . '/app/Http/Controllers/ProTask.php',
         'App\\Http\\Controllers\\ProjectController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProjectController.php',
         'App\\Http\\Controllers\\TaskController' => __DIR__ . '/../..' . '/app/Http/Controllers/TaskController.php',
+        'App\\Http\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsersController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\AdminMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/AdminMiddleware.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -440,6 +443,7 @@ class ComposerStaticInitb1b28826ef2946e4c61e5ea300828500
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\ProjectRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProjectRequest.php',
+        'App\\Mail\\MailUser' => __DIR__ . '/../..' . '/app/Mail/MailUser.php',
         'App\\ProPermision' => __DIR__ . '/../..' . '/app/ProPermision.php',
         'App\\ProTask' => __DIR__ . '/../..' . '/app/ProTask.php',
         'App\\Project' => __DIR__ . '/../..' . '/app/Project.php',
@@ -450,6 +454,7 @@ class ComposerStaticInitb1b28826ef2946e4c61e5ea300828500
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Task' => __DIR__ . '/../..' . '/app/Task.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\UsersController' => __DIR__ . '/../..' . '/app/UsersController.php',
         'Assert\\Assert' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/Assert.php',
         'Assert\\Assertion' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/Assertion.php',
         'Assert\\AssertionChain' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/AssertionChain.php',

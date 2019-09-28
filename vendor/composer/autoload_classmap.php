@@ -6,8 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\AsineTask' => $baseDir . '/app/AsineTask.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\ApiTerlloController' => $baseDir . '/app/Http/Controllers/ApiTerlloController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -18,6 +20,7 @@ return array(
     'App\\Http\\Controllers\\ProTask' => $baseDir . '/app/Http/Controllers/ProTask.php',
     'App\\Http\\Controllers\\ProjectController' => $baseDir . '/app/Http/Controllers/ProjectController.php',
     'App\\Http\\Controllers\\TaskController' => $baseDir . '/app/Http/Controllers/TaskController.php',
+    'App\\Http\\Controllers\\UsersController' => $baseDir . '/app/Http/Controllers/UsersController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\AdminMiddleware' => $baseDir . '/app/Http/Middleware/AdminMiddleware.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
@@ -28,6 +31,7 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Requests\\ProjectRequest' => $baseDir . '/app/Http/Requests/ProjectRequest.php',
+    'App\\Mail\\MailUser' => $baseDir . '/app/Mail/MailUser.php',
     'App\\ProPermision' => $baseDir . '/app/ProPermision.php',
     'App\\ProTask' => $baseDir . '/app/ProTask.php',
     'App\\Project' => $baseDir . '/app/Project.php',
@@ -38,6 +42,7 @@ return array(
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Task' => $baseDir . '/app/Task.php',
     'App\\User' => $baseDir . '/app/User.php',
+    'App\\UsersController' => $baseDir . '/app/UsersController.php',
     'Assert\\Assert' => $vendorDir . '/beberlei/assert/lib/Assert/Assert.php',
     'Assert\\Assertion' => $vendorDir . '/beberlei/assert/lib/Assert/Assertion.php',
     'Assert\\AssertionChain' => $vendorDir . '/beberlei/assert/lib/Assert/AssertionChain.php',

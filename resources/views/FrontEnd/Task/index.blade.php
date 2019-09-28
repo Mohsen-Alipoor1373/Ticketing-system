@@ -17,10 +17,14 @@
                 <form method="POST" action="{{url('/task')}}">
                     @csrf
                     <div class="card-body">
+
                         <div class="form-group">
-                            <label for="exampleInputEmail1">TitleTask</label>
-                            <input type="text" class="form-control" id="exampleInputTitle" placeholder="Title"
-                                   name="Title">
+                            <label>Task</label>
+                            <select class="form-control select2" style="width: 100%;" name="task_id">
+                                @foreach($projects as $project)
+                                    <option value="{{$project->id}}">{{$project->title}}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="form-group">
                             <label>Project</label>

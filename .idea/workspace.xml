@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73b3dc37-d736-404a-a8c6-c5320701991b" name="Default Changelist" comment="">
+    <list default="true" id="73b3dc37-d736-404a-a8c6-c5320701991b" name="Default Changelist" comment="end">
+      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/RequestDelete/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/asine.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Users/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Users/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Web/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Web/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProTask.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_24_071814_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_24_071814_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_24_081304_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_24_081304_create_tasks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Project/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Project/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/SetProTask/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Task/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FrontEnd/Task/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FrontEnd/Task/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +39,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -113,11 +141,20 @@
   <component name="ProjectId" id="1RJkSw9kP5GtaJ7QVjgTyKaaGE6" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/FrontEnd/Project/RequestDelete" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\resources\views\FrontEnd\Project\RequestDelete" />
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\resources\views\FrontEnd\SetProTask" />
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\resources\views\FrontEnd\Task" />
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\resources\views\FrontEnd\Users" />
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\app\Http\Controllers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\resources\views\FrontEnd" />
+      <recent name="C:\xampp\htdocs\mohsenalipoor\blog\app\Http\Controllers" />
       <recent name="C:\xampp\htdocs\mohsenalipoor\blog\app\Http\Controllers\Web" />
       <recent name="C:\xampp\htdocs\mohsenalipoor\blog\app\Http\Controllers\Api" />
     </key>
@@ -151,6 +188,11 @@
       <option name="presentableId" value="Default" />
       <updated>1569392589975</updated>
       <workItem from="1569392594207" duration="4546000" />
+      <workItem from="1569398047128" duration="193000" />
+      <workItem from="1569652407709" duration="9397000" />
+      <workItem from="1569662300897" duration="89000" />
+      <workItem from="1569662393248" duration="508000" />
+      <workItem from="1569662924558" duration="11744000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1569396495279</created>
@@ -180,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569397249633</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="end">
+      <created>1569398202162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569398202162</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +240,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -200,6 +251,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="api" />
     <MESSAGE value="namespace" />
-    <option name="LAST_COMMIT_MESSAGE" value="namespace" />
+    <MESSAGE value="end" />
+    <option name="LAST_COMMIT_MESSAGE" value="end" />
   </component>
 </project>

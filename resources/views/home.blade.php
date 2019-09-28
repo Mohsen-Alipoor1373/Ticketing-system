@@ -11,8 +11,8 @@
                     <div class="info-box-content">
                         <span class="info-box-text">Projects</span>
                         <span class="info-box-number">
-                  {{$projects}}
-                </span>
+0
+                        </span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>

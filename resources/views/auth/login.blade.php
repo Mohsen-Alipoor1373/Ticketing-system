@@ -36,8 +36,24 @@
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
+
                 <div class="input-group mb-3">
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="UserName" autofocus>
+                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name"
+                           value="{{ old('name') }}"  autocomplete="name" placeholder="UserName" autofocus>
+                    <div class="input-group-append">
+                        <span class="fa fa-envelope input-group-text"></span>
+                    </div>
+                    @error('name')
+                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                    @enderror
+                </div>
+
+                <div class="input-group mb-3">
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                           name="email"
+                           value="{{ old('email') }}"  autocomplete="email" placeholder="Email" autofocus>
                     <div class="input-group-append">
                         <span class="fa fa-envelope input-group-text"></span>
                     </div>
@@ -48,7 +64,8 @@
                     @enderror
                 </div>
                 <div class="input-group mb-3">
-                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required placeholder="Password" autocomplete="current-password">
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
+                           name="password" required placeholder="Password" autocomplete="current-password">
                     <div class="input-group-append">
                         <span class="fa fa-lock input-group-text"></span>
                     </div>
@@ -62,7 +79,7 @@
                     <div class="col-8">
                         <div class="checkbox icheck">
                             <label>
-                                <a href="{{url('register')}}"  class="btn btn-danger btn-block btn-flat">ثبت نام</a>
+                                <a href="{{url('register')}}" class="btn btn-danger btn-block btn-flat">ثبت نام</a>
 
                             </label>
                         </div>
@@ -92,8 +109,8 @@
     $(function () {
         $('input').iCheck({
             checkboxClass: 'icheckbox_square-blue',
-            radioClass   : 'iradio_square-blue',
-            increaseArea : '20%' // optional
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
         })
     })
 </script>

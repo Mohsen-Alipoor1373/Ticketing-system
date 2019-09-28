@@ -42,23 +42,18 @@
                 </div>
             </div>
         </form>
-    <?php
-    use App\Project;
-    $users = auth()->user()->id;
-    $project = Project::where('user_id', $users)->count();
 
-    ?>
-    <!-- Right navbar links -->
+        <!-- Right navbar links -->
         <ul class="navbar-nav mr-auto">
             <!-- Messages Dropdown Menu -->
             <!-- Notifications Dropdown Menu -->
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
                     <i class="fa fa-bell-o"></i>
-                    <span class="badge badge-warning navbar-badge">{{$project}}</span>
+                    <span class="badge badge-warning navbar-badge">0}</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
-                    <span class="dropdown-item dropdown-header">{{$project}} پروژه</span>
+                    <span class="dropdown-item dropdown-header">0</span>
                     <div class="dropdown-divider"></div>
 
 
@@ -100,7 +95,7 @@
                         </li>
 
 
-                        @can('create-project')
+                        @can('admin')
                             <li class="nav-item has-treeview">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
@@ -128,35 +123,105 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
+                                        <a href="{{url('/asine')}}" class="nav-link">
+                                            <i class="fa fa-circle-o nav-icon"></i>
+                                            <p>AsineTask</p>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fa fa-table"></i>
+                                    <p>
+                                        Users
+                                        <i class="fa fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{url('/show')}}" class="nav-link">
+                                            <i class="fa fa-circle-o nav-icon"></i>
+                                            <p>AddUser</p>
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+
+
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fa fa-table"></i>
+                                    <p>
+                                        RequestDeleteTask
+                                        <i class="fa fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{url('/requestask')}}" class="nav-link">
+                                            <i class="fa fa-circle-o nav-icon"></i>
+                                            <p>DeleteTask</p>
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+
+
+
+                        @endcan
+
+                        @can('user')
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fa fa-table"></i>
+                                    <p>
+                                        YourProject
+                                        <i class="fa fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{url('/taskshow')}}" class="nav-link">
+                                            <i class="fa fa-circle-o nav-icon"></i>
+                                            <p>Projects</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endcan
+                        @can('agent')
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fa fa-table"></i>
+                                    <p>
+                                        Tasks
+                                        <i class="fa fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
                                         <a href="{{url('/task')}}" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
                                             <p>AddTask</p>
                                         </a>
                                     </li>
                                 </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{url('/showtask')}}" class="nav-link">
+                                            <i class="fa fa-circle-o nav-icon"></i>
+                                            <p>ViewTask</p>
+                                        </a>
+                                    </li>
+                                </ul>
+
                             </li>
-
-
                         @endcan
-
-
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fa fa-table"></i>
-                                <p>
-                                    YourProject
-                                    <i class="fa fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{url('/showproject')}}" class="nav-link">
-                                        <i class="fa fa-circle-o nav-icon"></i>
-                                        <p>Projects</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
                             <a href="{{ route('logout') }}"
                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -235,14 +300,12 @@
     $(function () {
         //Initialize Select2 Elements
         $('.select2').select2()
-
         //Datemask dd/mm/yyyy
         $('#datemask').inputmask('dd/mm/yyyy', {'placeholder': 'dd/mm/yyyy'})
         //Datemask2 mm/dd/yyyy
         $('#datemask2').inputmask('mm/dd/yyyy', {'placeholder': 'mm/dd/yyyy'})
         //Money Euro
         $('[data-mask]').inputmask()
-
         //iCheck for checkbox and radio inputs
         $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
             checkboxClass: 'icheckbox_minimal-blue',
@@ -258,19 +321,13 @@
             checkboxClass: 'icheckbox_flat-green',
             radioClass: 'iradio_flat-green'
         })
-
         //Colorpicker
         $('.my-colorpicker1').colorpicker()
         //color picker with addon
         $('.my-colorpicker2').colorpicker()
-
-
         $('.normal-example').persianDatepicker();
-
-
     })
 </script>
 
 </body>
 </html>
-

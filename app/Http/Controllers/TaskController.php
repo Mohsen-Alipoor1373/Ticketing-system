@@ -2,102 +2,106 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\MailUser;
 use App\Project;
 use App\Task;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class TaskController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $projects = Project::get();
-        return view('/FrontEnd.Task.index', compact('projects'));
+        return view('/FrontEnd.Task.show', compact('projects'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         Task::create([
-
             'title' => $request['Title'],
             'project_id' => $request['project_id'],
-
         ]);
         session()->flash('success', 'Task Add Success');
         return redirect()->back();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        //
+        Task::deleted($id);
     }
 
-    public function viewtask(Task $task)
+    public function tasksshoww(Task $task)
     {
-
         $tasks = Task::where('project_id', $task->id)->get();
-        return view('/Frontend.Task.show', compact('tasks'));
+        return view('/Frontend.SetProTask.view', compact('tasks'));
+    }
 
+    public function addtask(Request $request)
+    {
+        Task::create([
+            'project_id' => $request['project_id'],
+            'user_id' => auth()->user()->id,
+            'title' => $request['title'],
+            'description' => $request['description'],
+        ]);
+        $name = auth()->user()->name;
+        Mail::to('test@gmail.com')->send(new MailUser($name));
+        session()->flash('success', 'Task Add Success');
+        return redirect()->back();
+    }
 
+    public function showtask()
+    {
+        $tasks = Task::where('user_id', auth()->user()->id)->get();
+        return view('/FrontEnd.Task.view', compact('tasks'));
+    }
+
+    public function delete(Task $task)
+    {
+        $task->update([
+            'expectation' => 1,
+        ]);
+        session()->flash('delete', 'delete');
+        return redirect()->back();
+    }
+
+    public function deleteadmin(Task $task)
+    {
+        $task->delete();
+        session()->flash('delete', 'delete');
+        return redirect()->back();
+
+    }
+
+    public function editt(Task $task)
+    {
+        $projects = Project::get();
+        return view('/FrontEnd.Task.edit', compact('task', 'projects'));
+    }
+
+    public function edittask(Task $task, Request $request)
+    {
+        $task->update([
+            'project_id' => $request['project_id'],
+            'title' => $request['title'],
+            'description' => $request['description'],
+        ]);
+        return redirect()->back();
+    }
+
+    public function asine()
+    {
+        $users = User::where('isAdmin', 1)->get();
+        $tasks = Task::get();
+        return view('/FrontEnd.Task.asine', compact('users', 'tasks'));
+
+    }
+
+    public function requestask()
+    {
+        $tasks = Task::where('expectation', 1)->get();
+        return view('/FrontEnd.RequestDelete.show', compact('tasks'));
     }
 }

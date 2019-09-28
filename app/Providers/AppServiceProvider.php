@@ -14,8 +14,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        Gate::define('create-project', function ($user) {
+        Gate::define('admin', function ($user) {
+            return $user->isAdmin == "";
+        });
+        Gate::define('user', function ($user) {
             return $user->isAdmin == 1;
+        });
+        Gate::define('agent', function ($user) {
+            return $user->isAdmin == 2;
         });
     }
 

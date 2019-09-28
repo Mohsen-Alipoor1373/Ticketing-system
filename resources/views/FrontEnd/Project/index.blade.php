@@ -42,14 +42,6 @@
                                    placeholder="LanDev" name="LanDev">
                         </div>
                         <div class="form-group">
-                            <label>User</label>
-                            <select class="form-control select2" style="width: 100%;" name="user_id">
-                                @foreach($users as $user)
-                                    <option value="{{$user->id}}">{{$user->name}}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <label>Permision</label>
                             <select class="form-control select2" multiple="multiple"
                                     data-placeholder="Select Permision"
